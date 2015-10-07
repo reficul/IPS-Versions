@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language>
- <app key="versions" version="100001">
+ <app key="versions" version="100002">
   <word key="__app_versions" js="0">Versions</word>
+  <word key="module__versions_versions" js="0">Versions</word>
   <word key="menu__versions_manage" js="0">Versions</word>
   <word key="menu__versions_manage_applications" js="0">Applications</word>
   <word key="menu__versions_manage_plugins" js="0">Plugins</word>
