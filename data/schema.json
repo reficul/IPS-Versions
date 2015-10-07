@@ -167,5 +167,362 @@
         },
         "collation": "utf8mb4_unicode_ci",
         "engine": "InnoDB"
+    },
+    "versions_plugins": {
+        "name": "versions_plugins",
+        "columns": {
+            "id": {
+                "allow_null": false,
+                "auto_increment": true,
+                "binary": false,
+                "comment": "ID Number",
+                "decimals": null,
+                "default": null,
+                "length": 20,
+                "name": "id",
+                "type": "BIGINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "plugin_directory": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Pseudo plugin directory",
+                "decimals": null,
+                "default": "",
+                "length": 255,
+                "name": "plugin_directory",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "installed": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Are we tracking an installed plugin or using manually specified version information?",
+                "decimals": null,
+                "default": "0",
+                "length": 1,
+                "name": "installed",
+                "type": "TINYINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "version": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The textual representation of the plugins version number",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "version",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "long_version": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The plugins version ID number",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "long_version",
+                "type": "INT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "plugin_name": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Name of the plugin",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "plugin_name",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "plugin_author": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Author of the plugin",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "plugin_author",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "plugin_website": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The plugins website",
+                "decimals": null,
+                "default": null,
+                "length": 0,
+                "name": "plugin_website",
+                "type": "TEXT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "updated_at": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "When the plugin was last updated",
+                "decimals": null,
+                "default": "CURRENT_TIMESTAMP",
+                "length": 0,
+                "name": "updated_at",
+                "type": "TIMESTAMP",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "update_url": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Link to where the user can download the updated plugin",
+                "decimals": null,
+                "default": null,
+                "length": 0,
+                "name": "update_url",
+                "type": "TEXT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "plugin_id": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The plugin ID for installed plugins",
+                "decimals": null,
+                "default": null,
+                "length": 20,
+                "name": "plugin_id",
+                "type": "BIGINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "id"
+                ]
+            },
+            "plugin_directory": {
+                "type": "key",
+                "name": "plugin_directory",
+                "length": [
+                    191
+                ],
+                "columns": [
+                    "plugin_directory"
+                ]
+            }
+        },
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+    },
+    "versions_themes": {
+        "name": "versions_themes",
+        "columns": {
+            "id": {
+                "allow_null": false,
+                "auto_increment": true,
+                "binary": false,
+                "comment": "ID Number",
+                "decimals": null,
+                "default": null,
+                "length": 20,
+                "name": "id",
+                "type": "BIGINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "theme_directory": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Pseudo theme directory",
+                "decimals": null,
+                "default": "",
+                "length": 255,
+                "name": "theme_directory",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "installed": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Are we tracking an installed theme or using manually specified version information?",
+                "decimals": null,
+                "default": null,
+                "length": 1,
+                "name": "installed",
+                "type": "TINYINT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "version": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The textual representation of the themes version number",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "version",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "long_version": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The themes version ID number",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "long_version",
+                "type": "INT",
+                "unsigned": true,
+                "values": [],
+                "zerofill": false
+            },
+            "theme_name": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Name of the theme",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "theme_name",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "theme_author": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Author of the theme",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "theme_author",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "theme_website": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The themes website",
+                "decimals": null,
+                "default": null,
+                "length": 0,
+                "name": "theme_website",
+                "type": "TEXT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "updated_at": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "When the theme was last updated",
+                "decimals": null,
+                "default": "CURRENT_TIMESTAMP",
+                "length": 0,
+                "name": "updated_at",
+                "type": "TIMESTAMP",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "update_url": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Link to where the user can download the updated theme",
+                "decimals": null,
+                "default": null,
+                "length": 0,
+                "name": "update_url",
+                "type": "TEXT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "theme_id": {
+                "allow_null": true,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The theme set ID for installed themes",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "theme_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "id"
+                ]
+            }
+        },
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB",
+        "comment": ""
     }
 }
