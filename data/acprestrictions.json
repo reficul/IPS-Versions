@@ -1,0 +1,31 @@
+{
+    "manage": {
+        "versions_app": {
+            "versions_app_view": "versions_app_view",
+            "versions_app_bump": "versions_app_bump",
+            "versions_app_edit": "versions_app_edit",
+            "versions_app_create": "versions_app_create",
+            "versions_app_delete": "versions_app_delete",
+            "versions_app_track": "versions_app_track",
+            "versions_app_import": "versions_app_import"
+        },
+        "versions_plugin": {
+          "versions_plugin_view": "versions_plugin_view",
+          "versions_plugin_bump": "versions_plugin_bump",
+          "versions_plugin_edit": "versions_plugin_edit",
+          "versions_plugin_create": "versions_plugin_create",
+          "versions_plugin_delete": "versions_plugin_delete",
+          "versions_plugin_track": "versions_plugin_track",
+          "versions_plugin_import": "versions_plugin_import"
+        },
+        "versions_theme": {
+          "versions_theme_view": "versions_theme_view",
+          "versions_theme_bump": "versions_theme_bump",
+          "versions_theme_edit": "versions_theme_edit",
+          "versions_theme_create": "versions_theme_create",
+          "versions_theme_delete": "versions_theme_delete",
+          "versions_theme_track": "versions_theme_track",
+          "versions_theme_import": "versions_theme_import"
+        }
+    }
+}

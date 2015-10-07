@@ -1,0 +1,172 @@
+{
+    "1": {
+        "method": "createTable",
+        "params": [
+            {
+                "name": "versions_applications",
+                "columns": {
+                    "id": {
+                        "name": "id",
+                        "type": "BIGINT",
+                        "length": "20",
+                        "unsigned": true,
+                        "zerofill": false,
+                        "binary": false,
+                        "allow_null": false,
+                        "default": null,
+                        "auto_increment": true,
+                        "comment": "ID Number"
+                    },
+                    "installed": {
+                        "name": "installed",
+                        "type": "TINYINT",
+                        "length": 1,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": "0",
+                        "comment": "Are we tracking an installed plugin \/ app or using manually specified version information?",
+                        "unsigned": true,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "version": {
+                        "name": "version",
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "The textual representation of the applications version number",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "app_name": {
+                        "name": "app_name",
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": false,
+                        "default": null,
+                        "comment": "Name of the tracked application",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "app_author": {
+                        "name": "app_author",
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "Author of the tracked application",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "app_directory": {
+                        "name": "app_directory",
+                        "type": "VARCHAR",
+                        "length": 250,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": false,
+                        "default": "",
+                        "comment": "Application directory",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "updated_at": {
+                        "name": "updated_at",
+                        "type": "TIMESTAMP",
+                        "length": 500,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": false,
+                        "default": null,
+                        "comment": "When the application was last updated",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "long_version": {
+                        "name": "long_version",
+                        "type": "INT",
+                        "length": 10,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "The applications version ID number",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "update_url": {
+                        "name": "update_url",
+                        "type": "TEXT",
+                        "length": 500,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "Link to where the user can download the updated application",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "app_website": {
+                        "name": "app_website",
+                        "type": "TEXT",
+                        "length": 255,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "The applications website",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    }
+                },
+                "indexes": {
+                    "PRIMARY": {
+                        "type": "primary",
+                        "name": "PRIMARY",
+                        "columns": [
+                            "id"
+                        ],
+                        "length": [
+                            null
+                        ]
+                    },
+                    "app_directory": {
+                        "type": "key",
+                        "name": "app_directory",
+                        "columns": [
+                            "app_directory"
+                        ],
+                        "length": [
+                            null
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

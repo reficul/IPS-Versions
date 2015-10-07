@@ -1,0 +1,22 @@
+{
+    "manage": {
+        "applications": {
+            "tab": "core",
+            "controller": "applications",
+            "do": "",
+            "restriction": "applications_manage"
+        },
+        "plugins": {
+            "tab": "core",
+            "controller": "plugins",
+            "do": "",
+            "restriction": "plugins_manage"
+        },
+        "themes": {
+            "tab": "core",
+            "controller": "themes",
+            "do": "",
+            "restriction": "themes_manage"
+        }
+    }
+}

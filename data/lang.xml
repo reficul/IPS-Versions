@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="versions" version="100001">
+  <word key="__app_versions" js="0">Versions</word>
+  <word key="menu__versions_manage" js="0">Versions</word>
+  <word key="menu__versions_manage_applications" js="0">Applications</word>
+  <word key="menu__versions_manage_plugins" js="0">Plugins</word>
+  <word key="menu__versions_manage_themes" js="0">Themes</word>
+  <word key="r__versions_app" js="0">Application Versions</word>
+  <word key="r__versions_app_view" js="0">View application versions</word>
+  <word key="r__versions_app_bump" js="0">Bump application versions</word>
+  <word key="r__versions_app_edit" js="0">Edit application versions</word>
+  <word key="r__versions_app_create" js="0">Create new application version entries</word>
+  <word key="r__versions_app_delete" js="0">Delete application version entries</word>
+  <word key="r__versions_app_track" js="0">Track the versions of installed applications</word>
+  <word key="r__versions_app_import" js="0">Import version information from application tarballs</word>
+  <word key="r__versions_plugin" js="0">Plugin Versions</word>
+  <word key="r__versions_plugin_view" js="0">View plugin versions</word>
+  <word key="r__versions_plugin_bump" js="0">Bump plugin versions</word>
+  <word key="r__versions_plugin_edit" js="0">Edit plugin versions</word>
+  <word key="r__versions_plugin_create" js="0">Create new plugin version entries</word>
+  <word key="r__versions_plugin_delete" js="0">Delete plugin version entries</word>
+  <word key="r__versions_plugin_track" js="0">Track the versions of installed plugins</word>
+  <word key="r__versions_plugin_import" js="0">Import version information from plugin XML files</word>
+  <word key="r__versions_theme" js="0">Theme Versions</word>
+  <word key="r__versions_theme_view" js="0">View theme versions</word>
+  <word key="r__versions_theme_bump" js="0">Bump theme versions</word>
+  <word key="r__versions_theme_edit" js="0">Edit theme versions</word>
+  <word key="r__versions_theme_create" js="0">Create new theme version entries</word>
+  <word key="r__versions_theme_delete" js="0">Delete theme version entries</word>
+  <word key="r__versions_theme_track" js="0">Track the versions of installed themes</word>
+  <word key="r__versions_theme_import" js="0">Import version information from theme XML files</word>
+  <word key="versions_app_versions" js="0">Application Versions</word>
+  <word key="versions_plugin_versions" js="0">Plugin Versions</word>
+  <word key="versions_theme_versions" js="0">Theme Versions</word>
+  <word key="versions_app_name" js="0">Application Name</word>
+  <word key="versions_app_author" js="0">Author</word>
+  <word key="versions_app_directory" js="0">App Directory</word>
+  <word key="versions_plugin_name" js="0">Plugin Name</word>
+  <word key="versions_plugin_author" js="0">Author</word>
+  <word key="versions_plugin_directory" js="0">Plugin Directory</word>
+  <word key="versions_theme_name" js="0">Theme Name</word>
+  <word key="versions_theme_author" js="0">Author</word>
+  <word key="versions_theme_directory" js="0">Theme Directory</word>
+  <word key="versions_version" js="0">Version</word>
+  <word key="versions_long_version" js="0">Version ID</word>
+  <word key="versions_updated_at" js="0">Updated At</word>
+  <word key="versions_filter_installed" js="0">Installed</word>
+  <word key="versions_filter_custom" js="0">Custom</word>
+  <word key="versions_create" js="0">Create</word>
+  <word key="versions_track" js="0">Track</word>
+  <word key="versions_import" js="0">Import</word>
+  <word key="versions_bump" js="0">Bump Version</word>
+  <word key="versions_edit" js="0">Edit Version</word>
+  <word key="versions_delete" js="0">Delete Version</word>
+  <word key="versions_update_url" js="0">Update URL</word>
+  <word key="versions_update_url_desc" js="0">This is the URL where the administrator can download updates</word>
+  <word key="versions_app_select" js="0">Track which application?</word>
+  <word key="versions_plugin_select" js="0">Track which plugin?</word>
+  <word key="versions_theme_select" js="0">Track which theme?</word>
+  <word key="versions_app_import_title" js="0">Import Application Data</word>
+  <word key="versions_plugin_import_title" js="0">Import Plugin Data</word>
+  <word key="versions_theme_import_title" js="0">Import Theme Data</word>
+  <word key="versions_app_import" js="0">Application .tar archive</word>
+  <word key="versions_plugin_import" js="0">Plugin .xml file</word>
+  <word key="versions_theme_import" js="0">Theme .xml file</word>
+  <word key="versions_app_track_title" js="0">Track Installed Application</word>
+  <word key="versions_plugin_track_title" js="0">Track Installed Plugin</word>
+  <word key="versions_theme_track_title" js="0">Track Installed Theme</word>
+  <word key="versions_create_successful" js="0">%s version data successfully created</word>
+  <word key="versions_track_successful" js="0">%s successfully added as a tracked entry</word>
+  <word key="versions_import_successful" js="0">%s version data successfully imported</word>
+  <word key="versions_version_bump_successful" js="0">%s version successfully bumped to %s</word>
+  <word key="versions_edit_successful" js="0">%s version data successfully updated</word>
+  <word key="versions_uninstalled_app" js="0">Uninstalled Application</word>
+  <word key="versions_uninstalled_plugin" js="0">Uninstalled Plugin</word>
+  <word key="versions_uninstalled_theme" js="0">Uninstalled Theme</word>
+  <word key="versions_error_appImport" js="0">Import failed, please be sure you are uploading a valid application .tar archive</word>
+  <word key="versions_error_pluginImport" js="0">Import failed, please be sure you are uploading a valid plugin .xml file</word>
+  <word key="versions_error_themeImport" js="0">Import failed, please be sure you are uploading a valid theme .xml file</word>
+  <word key="versions_error_noTrackableApps" js="0">There are no more applications available that you can track.</word>
+  <word key="versions_error_noTrackablePlugins" js="0">There are no more plugins available that you can track.</word>
+  <word key="versions_error_noTrackableThemes" js="0">There are no more themes available that you can track.</word>
+ </app>
+</language>
