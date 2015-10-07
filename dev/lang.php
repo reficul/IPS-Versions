@@ -1,7 +1,8 @@
 <?php
 
 $lang = array(
-	'__app_versions'    => "Versions",
+	'__app_versions'            => "Versions",
+	'module__versions_versions' => 'Versions',
 
 	'menu__versions_manage'                 => 'Versions',
 	'menu__versions_manage_applications'    => 'Applications',
