@@ -57,7 +57,7 @@ abstract class _Controller extends \IPS\Dispatcher\Controller
 	 * @brief   Instantiated version objects
 	 * @var     \IPS\versions\Versions[]
 	 */
-	private $_versions = array();
+	protected $_versions = array();
 
 	/**
 	 * Execute
